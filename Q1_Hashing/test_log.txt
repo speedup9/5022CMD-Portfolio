@@ -1,0 +1,626 @@
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 1306
+Enter Product Name: para
+Enter Category: pain
+Enter Price: 7
+Enter Stock Quantity: 150
+Inserted 1306 at home slot 146 (no collision).
+Product inserted successfully, 1306 at slot [146].
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 1300
+Enter Product Name: PARA
+Enter Category: killer
+Enter Price: 5
+Enter Stock Quantity: 120
+
+Collision for 1300: home slot 140 was occupied; stored at slot 147 after 7 probe(s).
+Product inserted successfully, 1300 at slot [147].
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 1306
+1306 already exists. Medicine not inserted.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: abc
+Invalid ID: it must be 4 digits starting with 1 (e.g. 1023).
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 2001
+Invalid ID: it must be 4 digits starting with 1 (e.g. 1023).
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 1400
+Enter Product Name: haha
+Enter Category: hoho
+Enter Price: abc
+Invalid number entered. Medicine not added.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 1
+
+--- Insert New Medicine ---
+Enter Product ID: 1401
+Enter Product Name: hehe
+Enter Category: ohoh
+Enter Price: -5
+Enter Stock Quantity: 2
+Invalid input: name required, price and quantity cannot be negative.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1293
+Product Found!
+
+Product ID: 1293
+Name: Medicine 1293
+Category: General
+Price: RM9.00
+Quantity: 20
+
+Search completed in 0.000013 seconds (Hash Table)
+Search completed in 0.000026 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1999
+Product not found.
+
+Search completed in 0.000008 seconds (Hash Table)
+Search completed in 0.000011 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1001
+Product Found!
+
+Product ID: 1001
+Name: Paracetamol 500mg
+Category: Painkiller
+Price: RM5.50
+Quantity: 120
+
+Search completed in 0.000008 seconds (Hash Table)
+Search completed in 0.000002 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1306
+Product Found!
+
+Product ID: 1306
+Name: para
+Category: pain
+Price: RM7.00
+Quantity: 150
+
+Search completed in 0.000007 seconds (Hash Table)
+Search completed in 0.000009 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 3
+
+--- Edit Medicine ---
+Enter Product ID to edit: 1306
+
+Current details:
+Product ID: 1306
+Name: para
+Category: pain
+Price: RM7.00
+Quantity: 150
+
+(Press Enter to keep the current value)
+Enter new Name: Para
+
+Enter new Category: Enter new Price: 3
+Enter new Stock Quantity: 
+Product updated successfully.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1306
+Product Found!
+
+Product ID: 1306
+Name: Para
+Category: pain
+Price: RM3.00
+Quantity: 150
+
+Search completed in 0.000009 seconds (Hash Table)
+Search completed in 0.000021 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 3
+
+--- Edit Medicine ---
+Enter Product ID to edit: 9999
+Product not found.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 3
+
+--- Edit Medicine ---
+Enter Product ID to edit: 1306
+
+Current details:
+Product ID: 1306
+Name: Para
+Category: pain
+Price: RM3.00
+Quantity: 150
+
+(Press Enter to keep the current value)
+Enter new Name: 
+Enter new Category: 
+Enter new Price: abc
+Enter new Stock Quantity: 
+Invalid number entered. No changes made.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 4
+
+--- Delete Medicine ---
+Enter Product ID to delete: 1154
+Product ID: 1154
+Name: Medicine 1154
+Category: General
+Price: RM9.00
+Quantity: 20
+Delete this product? (y/n): y
+Product 1154 deleted.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1200
+Product Found!
+
+Product ID: 1200
+Name: Medicine 1200
+Category: General
+Price: RM9.00
+Quantity: 20
+
+Search completed in 0.000011 seconds (Hash Table)
+Search completed in 0.000007 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 2
+
+--- Search Medicine ---
+Enter Product ID to search: 1154
+Product not found.
+
+Search completed in 0.000009 seconds (Hash Table)
+Search completed in 0.000009 seconds (Array - same record)
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 4
+
+--- Delete Medicine ---
+Enter Product ID to delete: 1154
+Product not found.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 4
+
+--- Delete Medicine ---
+Enter Product ID to delete: 1306
+Product ID: 1306
+Name: Para
+Category: pain
+Price: RM3.00
+Quantity: 150
+Delete this product? (y/n): N
+Deletion cancelled.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 5
+
+--- All Products ---
+Slot | ID       | Name                   | Category      |     Price |  Qty
+------------------------------------------------------------------------------
+8    | 1160     | Medicine 1160          | General       | RM   9.00 |   20
+9    | 1161     | Medicine 1161          | General       | RM   9.00 |   20
+10   | 1162     | Medicine 1162          | General       | RM   9.00 |   20
+11   | 1163     | Medicine 1163          | General       | RM   9.00 |   20
+12   | 1164     | Medicine 1164          | General       | RM   9.00 |   20
+13   | 1165     | Medicine 1165          | General       | RM   9.00 |   20
+14   | 1166     | Medicine 1166          | General       | RM   9.00 |   20
+15   | 1167     | Medicine 1167          | General       | RM   9.00 |   20
+16   | 1168     | Medicine 1168          | General       | RM   9.00 |   20
+17   | 1169     | Medicine 1169          | General       | RM   9.00 |   20
+18   | 1210     | Medicine 1210          | General       | RM   9.00 |   20
+19   | 1211     | Medicine 1211          | General       | RM   9.00 |   20
+20   | 1212     | Medicine 1212          | General       | RM   9.00 |   20
+21   | 1213     | Medicine 1213          | General       | RM   9.00 |   20
+22   | 1214     | Medicine 1214          | General       | RM   9.00 |   20
+23   | 1215     | Medicine 1215          | General       | RM   9.00 |   20
+24   | 1216     | Medicine 1216          | General       | RM   9.00 |   20
+25   | 1217     | Medicine 1217          | General       | RM   9.00 |   20
+26   | 1218     | Medicine 1218          | General       | RM   9.00 |   20
+27   | 1219     | Medicine 1219          | General       | RM   9.00 |   20
+39   | 1170     | Medicine 1170          | General       | RM   9.00 |   20
+40   | 1171     | Medicine 1171          | General       | RM   9.00 |   20
+41   | 1172     | Medicine 1172          | General       | RM   9.00 |   20
+42   | 1173     | Medicine 1173          | General       | RM   9.00 |   20
+43   | 1174     | Medicine 1174          | General       | RM   9.00 |   20
+44   | 1175     | Medicine 1175          | General       | RM   9.00 |   20
+45   | 1176     | Medicine 1176          | General       | RM   9.00 |   20
+46   | 1177     | Medicine 1177          | General       | RM   9.00 |   20
+47   | 1178     | Medicine 1178          | General       | RM   9.00 |   20
+48   | 1179     | Medicine 1179          | General       | RM   9.00 |   20
+49   | 1220     | Medicine 1220          | General       | RM   9.00 |   20
+50   | 1221     | Medicine 1221          | General       | RM   9.00 |   20
+51   | 1222     | Medicine 1222          | General       | RM   9.00 |   20
+52   | 1223     | Medicine 1223          | General       | RM   9.00 |   20
+53   | 1224     | Medicine 1224          | General       | RM   9.00 |   20
+54   | 1225     | Medicine 1225          | General       | RM   9.00 |   20
+55   | 1226     | Medicine 1226          | General       | RM   9.00 |   20
+56   | 1227     | Medicine 1227          | General       | RM   9.00 |   20
+57   | 1228     | Medicine 1228          | General       | RM   9.00 |   20
+58   | 1229     | Medicine 1229          | General       | RM   9.00 |   20
+65   | 1001     | Paracetamol 500mg      | Painkiller    | RM   5.50 |  120
+70   | 1180     | Medicine 1180          | General       | RM   9.00 |   20
+71   | 1181     | Medicine 1181          | General       | RM   9.00 |   20
+72   | 1182     | Medicine 1182          | General       | RM   9.00 |   20
+73   | 1183     | Medicine 1183          | General       | RM   9.00 |   20
+74   | 1184     | Medicine 1184          | General       | RM   9.00 |   20
+75   | 1185     | Medicine 1185          | General       | RM   9.00 |   20
+76   | 1186     | Medicine 1186          | General       | RM   9.00 |   20
+77   | 1187     | Medicine 1187          | General       | RM   9.00 |   20
+78   | 1188     | Medicine 1188          | General       | RM   9.00 |   20
+79   | 1189     | Medicine 1189          | General       | RM   9.00 |   20
+80   | 1230     | Medicine 1230          | General       | RM   9.00 |   20
+81   | 1231     | Medicine 1231          | General       | RM   9.00 |   20
+82   | 1232     | Medicine 1232          | General       | RM   9.00 |   20
+83   | 1233     | Medicine 1233          | General       | RM   9.00 |   20
+84   | 1234     | Medicine 1234          | General       | RM   9.00 |   20
+85   | 1235     | Medicine 1235          | General       | RM   9.00 |   20
+86   | 1236     | Medicine 1236          | General       | RM   9.00 |   20
+87   | 1237     | Medicine 1237          | General       | RM   9.00 |   20
+88   | 1238     | Medicine 1238          | General       | RM   9.00 |   20
+89   | 1239     | Medicine 1239          | General       | RM   9.00 |   20
+95   | 1010     | Omeprazole 20mg        | Antacid       | RM  18.40 |   45
+101  | 1190     | Medicine 1190          | General       | RM   9.00 |   20
+102  | 1191     | Medicine 1191          | General       | RM   9.00 |   20
+103  | 1192     | Medicine 1192          | General       | RM   9.00 |   20
+104  | 1193     | Medicine 1193          | General       | RM   9.00 |   20
+105  | 1194     | Medicine 1194          | General       | RM   9.00 |   20
+106  | 1195     | Medicine 1195          | General       | RM   9.00 |   20
+107  | 1196     | Medicine 1196          | General       | RM   9.00 |   20
+108  | 1197     | Medicine 1197          | General       | RM   9.00 |   20
+109  | 1198     | Medicine 1198          | General       | RM   9.00 |   20
+110  | 1199     | Medicine 1199          | General       | RM   9.00 |   20
+111  | 1240     | Medicine 1240          | General       | RM   9.00 |   20
+112  | 1241     | Medicine 1241          | General       | RM   9.00 |   20
+113  | 1242     | Medicine 1242          | General       | RM   9.00 |   20
+114  | 1243     | Medicine 1243          | General       | RM   9.00 |   20
+115  | 1244     | Medicine 1244          | General       | RM   9.00 |   20
+116  | 1245     | Medicine 1245          | General       | RM   9.00 |   20
+117  | 1246     | Medicine 1246          | General       | RM   9.00 |   20
+118  | 1247     | Medicine 1247          | General       | RM   9.00 |   20
+119  | 1248     | Medicine 1248          | General       | RM   9.00 |   20
+120  | 1249     | Medicine 1249          | General       | RM   9.00 |   20
+129  | 1023     | Cetirizine 10mg        | Antihistamine | RM   6.20 |  100
+132  | 1026     | Ibuprofen 400mg        | Painkiller    | RM   8.90 |   80
+136  | 1250     | Medicine 1250          | General       | RM   9.00 |   20
+137  | 1251     | Medicine 1251          | General       | RM   9.00 |   20
+138  | 1252     | Medicine 1252          | General       | RM   9.00 |   20
+139  | 1253     | Medicine 1253          | General       | RM   9.00 |   20
+140  | 1254     | Medicine 1254          | General       | RM   9.00 |   20
+141  | 1255     | Medicine 1255          | General       | RM   9.00 |   20
+142  | 1256     | Medicine 1256          | General       | RM   9.00 |   20
+143  | 1257     | Medicine 1257          | General       | RM   9.00 |   20
+144  | 1258     | Medicine 1258          | General       | RM   9.00 |   20
+145  | 1259     | Medicine 1259          | General       | RM   9.00 |   20
+146  | 1306     | Para                   | pain          | RM   3.00 |  150
+147  | 1300     | PARA                   | killer        | RM   5.00 |  120
+163  | 1036     | Vitamin C 1000mg       | Supplement    | RM  15.00 |  200
+167  | 1260     | Medicine 1260          | General       | RM   9.00 |   20
+168  | 1261     | Medicine 1261          | General       | RM   9.00 |   20
+169  | 1262     | Medicine 1262          | General       | RM   9.00 |   20
+170  | 1263     | Medicine 1263          | General       | RM   9.00 |   20
+171  | 1264     | Medicine 1264          | General       | RM   9.00 |   20
+172  | 1265     | Medicine 1265          | General       | RM   9.00 |   20
+173  | 1266     | Medicine 1266          | General       | RM   9.00 |   20
+174  | 1267     | Medicine 1267          | General       | RM   9.00 |   20
+175  | 1268     | Medicine 1268          | General       | RM   9.00 |   20
+176  | 1269     | Medicine 1269          | General       | RM   9.00 |   20
+196  | 1048     | Amoxicillin 250mg      | Antibiotic    | RM  12.80 |   60
+198  | 1270     | Medicine 1270          | General       | RM   9.00 |   20
+199  | 1271     | Medicine 1271          | General       | RM   9.00 |   20
+200  | 1272     | Medicine 1272          | General       | RM   9.00 |   20
+201  | 1273     | Medicine 1273          | General       | RM   9.00 |   20
+202  | 1274     | Medicine 1274          | General       | RM   9.00 |   20
+203  | 1275     | Medicine 1275          | General       | RM   9.00 |   20
+204  | 1276     | Medicine 1276          | General       | RM   9.00 |   20
+205  | 1277     | Medicine 1277          | General       | RM   9.00 |   20
+206  | 1278     | Medicine 1278          | General       | RM   9.00 |   20
+207  | 1279     | Medicine 1279          | General       | RM   9.00 |   20
+223  | 1100     | Medicine 1100          | General       | RM   9.00 |   20
+224  | 1101     | Medicine 1101          | General       | RM   9.00 |   20
+225  | 1102     | Medicine 1102          | General       | RM   9.00 |   20
+226  | 1103     | Medicine 1103          | General       | RM   9.00 |   20
+227  | 1104     | Medicine 1104          | General       | RM   9.00 |   20
+228  | 1105     | Medicine 1105          | General       | RM   9.00 |   20
+229  | 1106     | Medicine 1106          | General       | RM   9.00 |   20
+230  | 1107     | Medicine 1107          | General       | RM   9.00 |   20
+231  | 1108     | Medicine 1108          | General       | RM   9.00 |   20
+232  | 1109     | Medicine 1109          | General       | RM   9.00 |   20
+233  | 1280     | Medicine 1280          | General       | RM   9.00 |   20
+234  | 1281     | Medicine 1281          | General       | RM   9.00 |   20
+235  | 1282     | Medicine 1282          | General       | RM   9.00 |   20
+236  | 1283     | Medicine 1283          | General       | RM   9.00 |   20
+237  | 1284     | Medicine 1284          | General       | RM   9.00 |   20
+238  | 1285     | Medicine 1285          | General       | RM   9.00 |   20
+239  | 1286     | Medicine 1286          | General       | RM   9.00 |   20
+240  | 1287     | Medicine 1287          | General       | RM   9.00 |   20
+241  | 1288     | Medicine 1288          | General       | RM   9.00 |   20
+242  | 1289     | Medicine 1289          | General       | RM   9.00 |   20
+254  | 1110     | Medicine 1110          | General       | RM   9.00 |   20
+255  | 1111     | Medicine 1111          | General       | RM   9.00 |   20
+256  | 1112     | Medicine 1112          | General       | RM   9.00 |   20
+257  | 1113     | Medicine 1113          | General       | RM   9.00 |   20
+258  | 1114     | Medicine 1114          | General       | RM   9.00 |   20
+259  | 1115     | Medicine 1115          | General       | RM   9.00 |   20
+260  | 1116     | Medicine 1116          | General       | RM   9.00 |   20
+261  | 1117     | Medicine 1117          | General       | RM   9.00 |   20
+262  | 1118     | Medicine 1118          | General       | RM   9.00 |   20
+263  | 1119     | Medicine 1119          | General       | RM   9.00 |   20
+264  | 1290     | Medicine 1290          | General       | RM   9.00 |   20
+265  | 1291     | Medicine 1291          | General       | RM   9.00 |   20
+266  | 1292     | Medicine 1292          | General       | RM   9.00 |   20
+267  | 1293     | Medicine 1293          | General       | RM   9.00 |   20
+285  | 1120     | Medicine 1120          | General       | RM   9.00 |   20
+286  | 1121     | Medicine 1121          | General       | RM   9.00 |   20
+287  | 1122     | Medicine 1122          | General       | RM   9.00 |   20
+288  | 1123     | Medicine 1123          | General       | RM   9.00 |   20
+289  | 1124     | Medicine 1124          | General       | RM   9.00 |   20
+290  | 1125     | Medicine 1125          | General       | RM   9.00 |   20
+291  | 1126     | Medicine 1126          | General       | RM   9.00 |   20
+292  | 1127     | Medicine 1127          | General       | RM   9.00 |   20
+293  | 1128     | Medicine 1128          | General       | RM   9.00 |   20
+294  | 1129     | Medicine 1129          | General       | RM   9.00 |   20
+316  | 1130     | Medicine 1130          | General       | RM   9.00 |   20
+317  | 1131     | Medicine 1131          | General       | RM   9.00 |   20
+318  | 1132     | Medicine 1132          | General       | RM   9.00 |   20
+319  | 1133     | Medicine 1133          | General       | RM   9.00 |   20
+320  | 1134     | Medicine 1134          | General       | RM   9.00 |   20
+321  | 1135     | Medicine 1135          | General       | RM   9.00 |   20
+322  | 1136     | Medicine 1136          | General       | RM   9.00 |   20
+323  | 1137     | Medicine 1137          | General       | RM   9.00 |   20
+324  | 1138     | Medicine 1138          | General       | RM   9.00 |   20
+325  | 1139     | Medicine 1139          | General       | RM   9.00 |   20
+347  | 1140     | Medicine 1140          | General       | RM   9.00 |   20
+348  | 1141     | Medicine 1141          | General       | RM   9.00 |   20
+349  | 1142     | Medicine 1142          | General       | RM   9.00 |   20
+350  | 1143     | Medicine 1143          | General       | RM   9.00 |   20
+351  | 1144     | Medicine 1144          | General       | RM   9.00 |   20
+352  | 1145     | Medicine 1145          | General       | RM   9.00 |   20
+353  | 1146     | Medicine 1146          | General       | RM   9.00 |   20
+354  | 1147     | Medicine 1147          | General       | RM   9.00 |   20
+355  | 1148     | Medicine 1148          | General       | RM   9.00 |   20
+356  | 1149     | Medicine 1149          | General       | RM   9.00 |   20
+378  | 1150     | Medicine 1150          | General       | RM   9.00 |   20
+379  | 1151     | Medicine 1151          | General       | RM   9.00 |   20
+380  | 1152     | Medicine 1152          | General       | RM   9.00 |   20
+381  | 1153     | Medicine 1153          | General       | RM   9.00 |   20
+382  | 1200     | Medicine 1200          | General       | RM   9.00 |   20
+383  | 1155     | Medicine 1155          | General       | RM   9.00 |   20
+384  | 1156     | Medicine 1156          | General       | RM   9.00 |   20
+385  | 1157     | Medicine 1157          | General       | RM   9.00 |   20
+386  | 1158     | Medicine 1158          | General       | RM   9.00 |   20
+387  | 1159     | Medicine 1159          | General       | RM   9.00 |   20
+388  | 1201     | Medicine 1201          | General       | RM   9.00 |   20
+389  | 1202     | Medicine 1202          | General       | RM   9.00 |   20
+390  | 1203     | Medicine 1203          | General       | RM   9.00 |   20
+391  | 1204     | Medicine 1204          | General       | RM   9.00 |   20
+392  | 1205     | Medicine 1205          | General       | RM   9.00 |   20
+393  | 1206     | Medicine 1206          | General       | RM   9.00 |   20
+394  | 1207     | Medicine 1207          | General       | RM   9.00 |   20
+395  | 1208     | Medicine 1208          | General       | RM   9.00 |   20
+396  | 1209     | Medicine 1209          | General       | RM   9.00 |   20
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 7
+Invalid choice, please enter 1-6.
+
+
+===== Pharmacy Inventory System =====
+1. Insert Product
+2. Search Product
+3. Edit Product
+4. Delete Product
+5. List all products
+6. Exit
+Enter choice: 6
+Exiting Inventory System. Goodbye!
+
+Process finished with exit code 0
