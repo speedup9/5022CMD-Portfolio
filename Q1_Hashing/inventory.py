@@ -68,7 +68,7 @@ def insert_medicine(table, array):
         print(f"\nCollision for {product_id}: home slot {home} was occupied; "
               f"stored at slot {index} after {probes} probe(s).")
     else:
-        print(f"Inserted {product_id} at home slot {home} (no collision).")
+        print(f"\nInserted {product_id} at home slot {home} (no collision).")
 
     print(f"Product inserted successfully, {product_id} at slot [{index}].")
 
