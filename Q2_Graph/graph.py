@@ -1,9 +1,7 @@
 class Graph:
     """Generic unweighted directed graph (adjacency list).
-
-    Vertices can be any hashable object, so this class has no
-    course-specific code and can be reused in other programs.
-    """
+       Vertices can be any hashable object, so this class has no
+       course-specific code and can be reused in other programs."""
 
     def __init__(self):
         # key = vertex, value = list of vertices it points TO (outgoing edges)
@@ -49,13 +47,3 @@ class Graph:
     def getVertices(self):
         """Return a list of all vertices."""
         return list(self.adjacency.keys())
-
-
-if __name__ == "__main__":
-    g = Graph()
-    for v in ["A", "B", "C"]:
-        g.addVertex(v)
-    g.addEdge("A", "C")
-    g.addEdge("B", "C")
-    print("Incoming to C:", g.listIncomingAdjacentVertex("C"))   # ['A', 'B']
-    print("Outgoing from A:", g.listOutgoingAdjacentVertex("A")) # ['C']

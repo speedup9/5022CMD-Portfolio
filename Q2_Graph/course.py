@@ -19,9 +19,3 @@ class Course:
         if self.level == "elective":
             return f"Course Name  : {self.course_name}\n(Other details are hidden for elective courses)"
         return str(self)
-
-
-if __name__ == "__main__":
-    c = Course("CS101", "Programming Fundamentals", 4, "core")
-    print(c)
-    print(c.profile())
