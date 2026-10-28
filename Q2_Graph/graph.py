@@ -7,7 +7,7 @@ class Graph:
 
     def __init__(self):
         # key = vertex, value = list of vertices it points TO (outgoing edges)
-        self.adjacency = {}
+        self.adjacency = {}   # starts empty; vertex -> [vertices it points TO]
 
     def addVertex(self, vertex):
         """Add a new vertex. Returns False if it already exists."""
