@@ -1,0 +1,339 @@
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 1
+
+Available Courses:
+1. CS101 - Introduction to Programming
+2. CS201 - Data Structures
+3. CS301 - Advanced Algorithms
+4. CS302 - Database Systems
+5. CS401 - Machine Learning
+6. CS402 - Web Development
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 2
+Enter Course Code: cs301
+
+Course details of CS301
+Course Code  : CS301
+Course Name  : Advanced Algorithms
+Credit Hours : 4
+Level        : Core
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 2
+Enter Course Code: Cs401
+
+Course details of CS401
+Course Code  : CS401
+Course Name  : Machine Learning
+Credit Hours : 3
+Level        : Elective
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 3
+Enter Course Code: cs301
+
+Prerequisites for CS301 - Advanced Algorithms:
+- CS101 (Introduction to Programming)
+- CS201 (Data Structures)
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 3
+Enter Course Code: CS101
+
+Prerequisites for CS101 - Introduction to Programming:
+- None
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 4
+Enter Course Code: cs201
+
+Courses unlocked by CS201 - Data Structures:
+- CS301 (Advanced Algorithms)
+- CS302 (Database Systems)
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 4
+Enter Course Code: cs401
+
+
+Courses unlocked by CS401 - Machine Learning:
+- None
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: Invalid choice, please enter 1-9.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 8
+Enter Course Code: cs401
+
+Course profile of CS401
+Course Name  : Machine Learning
+(Other details are hidden for elective courses)
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 8
+Enter Course Code: CS101
+
+Course profile of CS101
+Course Code  : CS101
+Course Name  : Introduction to Programming
+Credit Hours : 4
+Level        : Core
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 5
+
+--- Add New Course ---
+Enter Course Code (e.g. CS601): CS501
+Enter Course Name: Capstone Project
+Enter Credit Hours: 6
+Enter Level (core/elective): core
+Course CS501 added successfully.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 5
+
+--- Add New Course ---
+Enter Course Code (e.g. CS601): cs12
+Invalid code: use CS followed by 3 digits (e.g. CS601). Course not added.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 5
+
+--- Add New Course ---
+Enter Course Code (e.g. CS601): cs101
+That course code already exists. Course not added.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 6
+
+--- Add Prerequisite ---
+Enter the course that needs a prerequisite: cs402
+
+Prerequisites for CS402 - Web Development:
+- CS302 (Database Systems)
+Enter the course to add as its prerequisite: cs101
+CS101 is now a prerequisite of CS402.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 6
+
+--- Add Prerequisite ---
+Enter the course that needs a prerequisite: Cs402
+
+Prerequisites for CS402 - Web Development:
+- CS101 (Introduction to Programming)
+- CS302 (Database Systems)
+Enter the course to add as its prerequisite: cs101
+Could not add: already a prerequisite, or the same course.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 7
+
+--- Remove Prerequisite ---
+Enter the course to remove a prerequisite from: cs402
+
+Prerequisites for CS402 - Web Development:
+- CS101 (Introduction to Programming)
+- CS302 (Database Systems)
+Enter the prerequisite course to remove: cs101
+CS101 is no longer a prerequisite of CS402 anymore.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 7
+
+--- Remove Prerequisite ---
+Enter the course to remove a prerequisite from: CS101
+
+Prerequisites for CS101 - Introduction to Programming:
+- None
+There is nothing to remove.
+
+
+==== University Course Prerequisite System ====
+1. View All Courses
+2. View Course Details
+3. View Prerequisites of a Course
+4. View Courses Unlocked by a Course
+5. Add a New Course
+6. Add a Prerequisite
+7. Remove a Prerequisite
+8. View Course Profile (elective details hidden)
+9. Exit
+Enter choice: 9
+
+Exiting program. Goodbye!
+
+Process finished with exit code 0
