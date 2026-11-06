@@ -1,3 +1,5 @@
+import os
+import sys
 import threading
 import time
 from fibonacci import fibonacci
@@ -15,7 +17,8 @@ def worker(n, index, records):
 
 
 def run_threaded():
-    """Run one round with 3 threads. Returns T = t2 - t1 in nanoseconds."""
+    """One round with a separate thread per number.
+    Returns (T in ns, list of results), where T = t2 - t1."""
     records = [None] * len(NUMBERS)
     threads = [threading.Thread(target=worker, args=(n, i, records))
                for i, n in enumerate(NUMBERS)]
@@ -27,42 +30,49 @@ def run_threaded():
 
     t1 = min(r[0] for r in records)           # start of the thread that started first
     t2 = max(r[1] for r in records)           # end of the thread that finished last
-    return t2 - t1
+    return t2 - t1, [r[2] for r in records]
 
 
 def run_sequential():
-    """Run one round without threads. Returns the total time in nanoseconds."""
+    """One round without threads. Returns (total time in ns, list of results)."""
     start = time.perf_counter_ns()
-    for n in NUMBERS:
-        fibonacci(n)
+    results = [fibonacci(n) for n in NUMBERS]
     end = time.perf_counter_ns()
-    return end - start
+    return end - start, results
 
 
 def run_experiment(title, func):
-    """Run func for ROUNDS rounds, print each time, return the average."""
-    print(f"\n===== {title} =====")
+    """Run func for ROUNDS rounds, print each round, and return the average T."""
+    print(f"\n=== Fibonacci Computation ({title}) ===")
     times = []
     for r in range(1, ROUNDS + 1):
-        t = func()
+        t, results = func()
         times.append(t)
-        print(f"Round {r:>2}: {t:>18,} ns")
+        values = ", ".join(f"Fib({n})={v}" for n, v in zip(NUMBERS, results))
+        print(f"Round {r:>2} : {values} | T = {t:,} ns")
     average = sum(times) // len(times)
-    print("-" * 32)
-    print(f"Average : {average:>18,} ns")
+    print(f"Average T ({title}) : {average:,} ns")
     return average
 
 
 def main():
-    print(f"Calculating Fibonacci{tuple(NUMBERS)} | {ROUNDS} rounds each")
-    avg_threaded = run_experiment("With multithreading", run_threaded)
-    avg_sequential = run_experiment("Without multithreading", run_sequential)
+    gil_enabled = getattr(sys, "_is_gil_enabled", lambda: True)()
+    print(f"Python {sys.version.split()[0]} | GIL enabled: {gil_enabled} "
+          f"| CPU cores: {os.cpu_count()}")
 
-    print("\n===== Comparison =====")
-    print(f"Threaded average   : {avg_threaded:>18,} ns")
-    print(f"Sequential average : {avg_sequential:>18,} ns")
-    print(f"Threaded / Sequential ratio: {avg_threaded / avg_sequential:.2f}")
+    avg_threaded = run_experiment("With Multithreading", run_threaded)
+    avg_sequential = run_experiment("Without Multithreading", run_sequential)
+
+    change = (avg_sequential - avg_threaded) / avg_sequential * 100
+    if change > 1:
+        note = f"Multithreading reduced the average completion time by approximately {change:.1f}%."
+    elif change < -1:
+        note = f"Multithreading increased the average completion time by approximately {-change:.1f}%."
+    else:
+        note = f"Multithreading made no significant difference ({change:+.1f}%)."
+    print(f"\nObservation: {note}")
 
 
 if __name__ == "__main__":
     main()
+

@@ -1,8 +1,8 @@
 def fibonacci(n):
     """Return the nth Fibonacci number using recursion.
 
-    fibonacci(0) = 0, fibonacci(1) = 1,
-    fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
+    fibonacci(0) = 0, fibonacci(1) = 1,  -> base case
+    fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)  -> recursive case
     """
     if n <= 1:                                   # base case
         return n

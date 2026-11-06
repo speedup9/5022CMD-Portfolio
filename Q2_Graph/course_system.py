@@ -187,7 +187,7 @@ def main():
         "8": view_profile,
     }
     while True:
-        print("\n==== University Course Prerequisite System ====")
+        print("\n\n==== University Course Prerequisite System ====")
         print("1. View All Courses")
         print("2. View Course Details")
         print("3. View Prerequisites of a Course")
