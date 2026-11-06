@@ -1,0 +1,31 @@
+Python 3.14.7 | GIL enabled: True | CPU cores: 16
+
+=== Fibonacci Computation (With Multithreading) ===
+Round  1 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,191,505,200 ns
+Round  2 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 19,315,691,200 ns
+Round  3 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 19,000,812,500 ns
+Round  4 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,878,592,500 ns
+Round  5 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,681,837,400 ns
+Round  6 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,559,724,800 ns
+Round  7 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,267,256,100 ns
+Round  8 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,225,954,500 ns
+Round  9 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,181,939,400 ns
+Round 10 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,712,050,900 ns
+Average T (With Multithreading) : 18,601,536,450 ns
+
+=== Fibonacci Computation (Without Multithreading) ===
+Round  1 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,473,836,200 ns
+Round  2 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,594,568,400 ns
+Round  3 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,373,369,000 ns
+Round  4 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,428,193,200 ns
+Round  5 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,060,542,700 ns
+Round  6 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 17,931,046,100 ns
+Round  7 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 17,926,614,800 ns
+Round  8 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,676,428,700 ns
+Round  9 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,304,471,600 ns
+Round 10 : Fib(35)=9227465, Fib(38)=39088169, Fib(40)=102334155 | T = 18,095,331,100 ns
+Average T (Without Multithreading) : 18,286,440,180 ns
+
+Observation: Multithreading increased the average completion time by approximately 1.7%.
+
+Process finished with exit code 0
